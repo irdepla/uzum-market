@@ -4,8 +4,211 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Tailwind CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <header>
+      <section class="top-header bg-[#F2F4F7]">
+        <div class="container">
+          <div
+            class="top-header__wrapper flex justify-between gap-20 items-center flex-grow"
+          >
+            <div class="top-header__locations flex gap-6">
+              <img src="./icons/location-svg.svg" alt="" />
+              <a href="#" class="underline">
+                <span> Toshkent </span>
+              </a>
+              <a href="#">
+                <span> Topshirish punktlari </span>
+              </a>
+            </div>
+            <div>
+              <ul class="top-header__lists flex gap-[15.62px]">
+                <li>
+                  <a
+                    href="https://seller.uzum.uz/uz?utm_source=uzum_market_main&utm_medium=web&utm_campaign=header_link"
+                  >
+                    <span
+                      class="text-[#7f4dff] hover:text-[#7000ff] border-r-2 border-solid border-[#dee0e5] pr-3"
+                      >Sotuvchi bo'lish</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://seller.uzum.uz/uz?utm_source=uzum_market_main&utm_medium=web&utm_campaign=header_link"
+                  >
+                    <span class="text-[#7f4dff] hover:text-[#7000ff]">
+                      Topshirish punktini ochish
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text-[#4d4f59] hover:text-[#1f2026]"
+                      >Savol-javob</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="text-[#4d4f59] hover:text-[#1f2026]"
+                      >Buyurtmalarim</span
+                    >
+                  </a>
+                </li>
+                <li class="flex gap-[5.73px]">
+                  <img src="./icons/uzb-flag.svg" alt="uzb-flag" />
+                  <span class="text-[#1f2026]">O'zbekcha</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <nav class="nav mt-[17px] mb-[12px]">
+      <div class="container">
+        <div
+          class="nav__wrapper flex flex-col justify-between items-center gap-[10px]"
+        >
+          <div class="flex items-center">
+            <div class="uzum-logo">
+              <img src="./icons/uzum-logo.svg" alt="uzum-logo" />
+            </div>
+            <btn
+              class="catalog__btn flex gap-2 items-center ml-8 px-[18.2px] py-2 border bg-[#e5e5ff] hover:bg-[#ceccff] rounded-[8px]"
+            >
+              <img src="./icons/catalog-icon.svg" alt="catalog" />
+              <span class="text-[#7000FF]">Katalog</span>
+            </btn>
+            <div class="flex ml-[7px] border">
+              <input
+                type="text"
+                placeholder="Mahsulotlar va turkumlar izlash"
+                class="pt-[10px] pb-[12px] pl-[16px] outline-none"
+              />
+              <button class="px-[27px] py-2 bg-[#F2F4F7] ml-[226px]">
+                <img src="./icons/search-btn.svg" alt="" class="" />
+              </button>
+            </div>
+            <button
+              class="login__btn flex items-center gap-3 ml-6 px-2 py-2 hover:bg-[#dee0e5] hover:rounded"
+            >
+              <img src="./icons/person-img.svg" alt="person-img" />
+              <span>Kirish</span>
+            </button>
+            <button
+              class="saved__btn flex items-center gap-3 ml-4 px-2 py-2 hover:bg-[#dee0e5] hover:rounded"
+            >
+              <img src="./icons/heart-img.svg" alt="person-img" />
+              <span>Saralangan</span>
+            </button>
+            <button
+              class="shopping__btn flex items-center gap-3 ml-4 px-2 py-2 hover:bg-[#dee0e5] hover:rounded"
+            >
+              <img src="./icons/basket-icon.svg" alt="person-img" />
+              <span>Savat</span>
+            </button>
+          </div>
+          <div class="navigation-links text-[12px] flex gap-[13px]">
+            <a
+              href="#"
+              class="flex items-center gap-1 font-semibold text-[#1f2026]"
+            >
+              <img
+                src="./images/sales-date.png"
+                alt="sale-img"
+                class="w-6 h-6"
+              />
+              <span>11.11</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-1 font-semibold text-[#1f2026]"
+            >
+              <img
+                src="https://static.uzum.uz/fast_categories/%20vyg.png"
+                alt="sale-img"
+                class="w-6 h-6"
+              />
+              <span>Har kuni foyda</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Elektronika</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Maishiy texnika</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Kiyim</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Poyabzallar</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Aksessuarlar</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Goʻzallik va parvarish</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Salomatlik</span>
+            </a>
+            <a href="#" class="nav-links">
+              <span>Uy-roʻzgʻor buyumlari</span>
+            </a>
+            <select
+              name="example"
+              id="example"
+              class="text-[#1f2026] opacity-[0.87] hover:opacity-[1]"
+            >
+              <option disabled selected class="outline-none" value="">
+                Yana
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="swiper__section">
+        <div class="container">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./images/swiper-img1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper-img2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/swiper-img3.png" alt="" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <div class="products__wrapper">
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
